@@ -1,9 +1,12 @@
-This is your app folder. Please only change app.js and config.yaml.
+# MATRIX Creator Heartbeat
+Use this to publish heartbeat messages to an MQTT broker.  Messages include device hostname, totalmem, freemem, and network details.
 
-Do not modify index.js.
+    $ git clone https://github.com/nieleyde/matrixstatus.git
 
-You may add packages via `npm`, they will be installed when the application is deployed to a device. 
 
-## Developer Documentation
+Update MQTT broker host and MQTT topics in app.js
 
-http://github.io/matrix-io/matrix-documentation/
+    $ cd matrixstatus
+    $ npm install
+    $ matrix deploy
+    $ matrix start matrixstatus
